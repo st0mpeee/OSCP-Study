@@ -1,0 +1,26 @@
+
+
+Important Services (In order of lowest hanging fruit):
+NBT-NS (NetBIOS Name Service) --Authentication
+Kerberos -- Authentication
+
+=========================
+
+Utilize .NET to your advantage.
+.NET API Reference -- https://docs.microsoft.com/en-us/dotnet/api/?view=net-6.0
+DirectoryServices -- https://docs.microsoft.com/en-us/dotnet/api/system.directoryservices?view=dotnet-plat-ext-6.0
+
+Powershell
+[System.DirectoryServices.ActiveDirectory.*]::FuncitonHere();
+
+=========================
+
+Kerberos
+Always need some credentials before attempting to enumerate objects.
+
+
+Tools:
+responder -- Authentication poisoner -- https://github.com/lgandx/Responder
+impacket
+smbclient, smbmap
+crackmapexec
